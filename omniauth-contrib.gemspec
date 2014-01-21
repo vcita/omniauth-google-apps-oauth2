@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path(File.join('..', 'lib', 'omniauth', 'google_oauth2', 'version'), __FILE__)
+require File.expand_path(File.join('..', 'lib', 'omniauth', 'google_apps_oauth2', 'version'), __FILE__)
 
 Gem::Specification.new do |gem|
   gem.add_dependency 'omniauth', '~> 1.0'
@@ -13,9 +13,9 @@ Gem::Specification.new do |gem|
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
   gem.test_files    = `git ls-files -- {spec}/*`.split("\n")
-  gem.name          = "omniauth-google-oauth2"
+  gem.name          = "omniauth-google-apps-oauth2"
   gem.require_paths = ["lib"]
-  gem.version       = OmniAuth::GoogleOauth2::VERSION
+  gem.version       = OmniAuth::GoogleAppsOauth2::VERSION
 
   gem.add_runtime_dependency 'omniauth-oauth2'
 
