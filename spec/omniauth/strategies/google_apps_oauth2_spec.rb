@@ -245,7 +245,7 @@ describe OmniAuth::Strategies::GoogleAppsOauth2 do
 
   describe '#callback_path' do
     it 'has the correct callback path' do
-      subject.callback_path.should eq('/auth/google_oauth2/callback')
+      subject.callback_path.should eq('/auth/google_apps_oauth2/callback')
     end
   end
 
