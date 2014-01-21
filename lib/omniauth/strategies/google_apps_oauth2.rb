@@ -2,11 +2,11 @@ require 'omniauth/strategies/oauth2'
 
 module OmniAuth
   module Strategies
-    class GoogleOauth2 < OmniAuth::Strategies::OAuth2
+    class GoogleAppsOauth2 < OmniAuth::Strategies::OAuth2
       BASE_SCOPE_URL = "https://www.googleapis.com/auth/"
       DEFAULT_SCOPE = "userinfo.email,userinfo.profile"
 
-      option :name, 'google_oauth2'
+      option :name, 'google_apps_oauth2'
 
       option :skip_friends, true
 
